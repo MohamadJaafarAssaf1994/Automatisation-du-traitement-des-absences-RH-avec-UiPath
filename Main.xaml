@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,50 +25,13 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Reflection</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Xml.Serialization</x:String>
-      <x:String>UiPath.Excel.Activities.Business</x:String>
-      <x:String>UiPath.Shared.Activities</x:String>
-      <x:String>UiPath.Mail</x:String>
-      <x:String>UiPath.Mail.Activities.Enums</x:String>
-      <x:String>UiPath.Shared.Activities.Utils</x:String>
-      <x:String>UiPath.Mail.Outlook.Activities</x:String>
-      <x:String>UiPath.Mail.Activities</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>System.Linq.Expressions</x:String>
-      <x:String>UiPath.Platform.ResourceHandling</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Models</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Models</x:String>
-      <x:String>UiPath.Shared.Services.Graph.Mail.Models</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Mail</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Filters</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Mail.Enums</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Filters</x:String>
-      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
-      <x:String>UiPath.Shared.Activities.Business</x:String>
-      <x:String>UiPath.AmazonWebServices.Models</x:String>
-      <x:String>UiPath.AmazonWebServices.Activities.Ec2.Instances</x:String>
-      <x:String>UiPath.AmazonWebServices.Activities</x:String>
-      <x:String>System.Management.Automation</x:String>
-      <x:String>System.Dynamic</x:String>
-      <x:String>UiPath.Orchestrator.Client.Models</x:String>
-      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
-      <x:String>System.Security</x:String>
-      <x:String>UiPath.Mail.IMAP.Activities</x:String>
-      <x:String>UiPath.Excel.Model</x:String>
-      <x:String>System.Numerics</x:String>
-      <x:String>UiPath.DataTableUtilities</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -98,9 +61,9 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
@@ -109,128 +72,56 @@
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
       <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>UiPath.Mail</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
-      <AssemblyReference>UiPath.AmazonWebServices</AssemblyReference>
-      <AssemblyReference>UiPath.AmazonWebServices.Activities</AssemblyReference>
-      <AssemblyReference>System.Management.Automation</AssemblyReference>
-      <AssemblyReference>UiPath.OrchestratorClient</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="784,3477.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="518,2368" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="attachmentsCount" />
+      <Variable x:TypeArguments="x:String" Name="dataFolder" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtReports" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtAbsencesClean" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtDestinataires" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtAbsences" />
+      <Variable x:TypeArguments="x:String" Name="mois" />
+      <Variable x:TypeArguments="x:String" Name="outputFolder" />
+      <Variable x:TypeArguments="x:String" Name="referentielPath" />
+      <Variable x:TypeArguments="x:String" Name="inputPath" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="558,3454.6666666666665" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="502,2345" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Essayer" sap:VirtualizedContainerService.HintSize="556,2783.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_12">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="500,2067" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap:VirtualizedContainerService.HintSize="522,2723.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="lstMails" />
-              <Variable x:TypeArguments="sd:DataTable" Name="dtAbsences" />
-              <Variable x:TypeArguments="sd:DataTable" Name="dtReferentiel" />
-              <Variable x:TypeArguments="sd:DataTable" Name="dtFiltered" />
-              <Variable x:TypeArguments="x:String" Name="strOutputPath" />
-            </Sequence.Variables>
+          <Sequence DisplayName="Main_process" sap:VirtualizedContainerService.HintSize="466,2007" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" ConnectionMode="LegacyConfiguration" CreatedAfterSolutionSupport="False" DisplayName="Get Outlook Desktop Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="488,124" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox" MarkAsRead="False" Messages="[lstMails]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Top="5" UseISConnection="False">
-              <ui:GetOutlookMailMessages.ConnectionDetailsBackupSlot>
-                <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="{x:Null}">
-                  <usau:BackupSlot.BackupValues>
-                    <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
-                  </usau:BackupSlot.BackupValues>
-                </usau:BackupSlot>
-              </ui:GetOutlookMailMessages.ConnectionDetailsBackupSlot>
-            </ui:GetOutlookMailMessages>
-            <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each mail" sap:VirtualizedContainerService.HintSize="488,57.333333333333336" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[lstMails]">
-              <ui:ForEach.Body>
-                <ActivityAction x:TypeArguments="snm:MailMessage">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="mail" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,456.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:SaveMailAttachments Attachments="{x:Null}" ResourceAttachments="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="False" FolderPath="Data/Input/" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_2" Message="[mail]" OverwriteExisting="False" />
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Pièce jointe sauvegardée depuis : &quot; + mail.Subject]" />
-                  </Sequence>
-                </ActivityAction>
-              </ui:ForEach.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:ForEach>
-            <ueab:ExcelApplicationCard DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="488,57.333333333333336" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Data/Input/INPUT_Absences_RH_Janvier2024.ods">
-              <ueab:ExcelApplicationCard.Body>
-                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Absences_RH&quot;)]" SaveTo="[dtAbsences]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ueab:ReadRangeX>
-                  </Sequence>
-                </ActivityAction>
-              </ueab:ExcelApplicationCard.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ueab:ExcelApplicationCard>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Absences lues : &quot; + dtAbsences.Rows.Count.ToString + &quot; lignes&quot;]">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="432,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Début du processus RH - Absences&quot;]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -238,178 +129,135 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <ueab:ExcelApplicationCard DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="488,57.333333333333336" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="Data/REFERENTIEL_Destinataires.xlsx">
-              <ueab:ExcelApplicationCard.Body>
-                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="450,222.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="416,162.66666666666666" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Destinataires&quot;)]" SaveTo="[dtReferentiel]" />
-                  </Sequence>
-                </ActivityAction>
-              </ueab:ExcelApplicationCard.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ueab:ExcelApplicationCard>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Référentiel lu : &quot; + dtReferentiel.Rows.Count.ToString + &quot; régions&quot;]">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:LogMessage>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtReferentiel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="488,2230" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-              <ui:ForEachRow.Body>
-                <ActivityAction x:TypeArguments="sd:DataRow">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowRegion" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="486,2055.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:FilterDataTable DataTable="[dtAbsences]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="452,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtFiltered]" SelectColumnsMode="Remove">
-                      <ui:FilterDataTable.Filters>
-                        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
-                          <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
-                            <ui:FilterOperationArgument.Column>
-                              <InArgument x:TypeArguments="x:String">["Région_Site"]</InArgument>
-                            </ui:FilterOperationArgument.Column>
-                            <ui:FilterOperationArgument.Operand>
-                              <InArgument x:TypeArguments="x:String">[rowRegion("Clé_Tri").ToString]</InArgument>
-                            </ui:FilterOperationArgument.Operand>
-                          </ui:FilterOperationArgument>
-                        </scg:List>
-                      </ui:FilterDataTable.Filters>
-                      <ui:FilterDataTable.SelectColumns>
-                        <scg:List x:TypeArguments="InArgument" Capacity="4">
-                          <x:Null />
-                        </scg:List>
-                      </ui:FilterDataTable.SelectColumns>
-                    </ui:FilterDataTable>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Région : &quot; + rowRegion(&quot;Clé_Tri&quot;).ToString + &quot; → &quot; + dtFiltered.Rows.Count.ToString + &quot; absences&quot;]" />
-                    <Assign sap:VirtualizedContainerService.HintSize="452,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_1">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[strOutputPath]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">["Data/Output/Absences_" + rowRegion("Clé_Tri").ToString + "_Janvier2024.xlsx"]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ueab:ExcelApplicationCard DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="452,684" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="[strOutputPath]">
-                      <ueab:ExcelApplicationCard.Body>
-                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="450,452" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Absences&quot;)]" DisplayName="Write TableDonnées to Excel" sap:VirtualizedContainerService.HintSize="416,224.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dtFiltered]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Fichier généré : &quot; + strOutputPath]" />
-                          </Sequence>
-                        </ActivityAction>
-                      </ueab:ExcelApplicationCard.Body>
-                    </ueab:ExcelApplicationCard>
-                    <If Condition="[String.IsNullOrEmpty(rowRegion(&quot;Email&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="452,762" sap2010:WorkflowViewState.IdRef="If_1">
-                      <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,174.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_16">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <Throw Exception="[New UiPath.Core.BusinessRuleException(&quot;Email manquant pour la région : &quot; + rowRegion(&quot;Clé_Tri&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_1" />
-                        </Sequence>
-                      </If.Then>
-                      <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,456.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" UseRichTextEditor="{x:Null}" Account="youssef.maazouz@estiam.com" AttachmentsCollection="[New List(Of String) From {strOutputPath}]" Body="Bonjour, veuillez trouver ci-joint les absences de votre région." ConnectionMode="Undefined" CreatedAfterSolutionSupport="False" DisplayName="Send Outlook Desktop Mail Message" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Absences &quot; + rowRegion(&quot;Clé_Tri&quot;).ToString + &quot; - Janvier 2024&quot;]" To="[rowRegion(&quot;Email&quot;).ToString]" UseISConnection="False">
-                            <ui:SendOutlookMail.ConnectionDetailsBackupSlot>
-                              <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="{x:Null}">
-                                <usau:BackupSlot.BackupValues>
-                                  <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
-                                </usau:BackupSlot.BackupValues>
-                              </usau:BackupSlot>
-                            </ui:SendOutlookMail.ConnectionDetailsBackupSlot>
-                            <ui:SendOutlookMail.Files>
-                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-                            </ui:SendOutlookMail.Files>
-                          </ui:SendOutlookMail>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Mail envoyé à : &quot; + rowRegion(&quot;Email&quot;).ToString + &quot; pour &quot; + rowRegion(&quot;Clé_Tri&quot;).ToString]" />
-                        </Sequence>
-                      </If.Else>
-                    </If>
-                  </Sequence>
-                </ActivityAction>
-              </ui:ForEachRow.Body>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Init_Config - Invoke Workflow File (Processes\Init_Config.xaml)" sap:VirtualizedContainerService.HintSize="432,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Processes\Init_Config.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_dataFolder">[dataFolder]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_mois">[mois]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_outputFolder">[outputFolder]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_referentielPath">[referentielPath]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_inputPath">[inputPath]</OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-            </ui:ForEachRow>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="432,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Config OK: &quot; + inputPath + &quot; | &quot; + referentielPath + &quot; | &quot; + outputFolder]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Get_Email_Attachments - Invoke Workflow File (Processes\Get_Email_Attachments.xaml)" sap:VirtualizedContainerService.HintSize="432,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Processes\Get_Email_Attachments.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="out_attachmentsCount">[attachmentsCount]</OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_dataFolder">[dataFolder]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="432,175" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Pièces jointes récupérées : &quot; + attachmentsCount.ToString]" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Read_Excel_Files - Invoke Workflow File (Processes\Read_Excel_Files.xaml)" sap:VirtualizedContainerService.HintSize="432,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Processes\Read_Excel_Files.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtDestinataires">[dtDestinataires]</OutArgument>
+                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtAbsences">[dtAbsences]</OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_referentielPath">[referentielPath]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_inputPath">[inputPath]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="432,57" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Lecture terminée dans Main&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Clean_Data - Invoke Workflow File (Processes\Clean_Data.xaml)" sap:VirtualizedContainerService.HintSize="432,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Processes\Clean_Data.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtAbsencesClean">[dtAbsencesClean]</OutArgument>
+                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtAbsences">[dtAbsences]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="432,57" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Nettoyage reçu dans Main : &quot; + dtAbsencesClean.Rows.Count.ToString + &quot; lignes propres&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Generate_Reports_By_Region - Invoke Workflow File (Processes\Generate_Reports_By_Region.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Processes\Generate_Reports_By_Region.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtDestinataires">[dtDestinataires]</InArgument>
+                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtReports">[dtReports]</OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_mois">[mois]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_outputFolder">[outputFolder]</InArgument>
+                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtAbsencesClean">[dtAbsencesClean]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Génération reçue dans Main : &quot; + dtReports.Rows.Count.ToString + &quot; rapports créés&quot;]" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Send_Emails - Invoke Workflow File (Processes\Send_Emails.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Processes\Send_Emails.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_mois">[mois]</InArgument>
+                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtDestinataires">[dtDestinataires]</InArgument>
+                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtReports">[dtReports]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Processus RH terminé avec succès&quot;]" />
           </Sequence>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+          <ActivityAction x:TypeArguments="ui:BusinessRuleException">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Catch {ExceptionType}" sap:VirtualizedContainerService.HintSize="484,25" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Erreur métier : &quot; + exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_4">
           <ActivityAction x:TypeArguments="s:Exception">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Catch {ExceptionType}" sap:VirtualizedContainerService.HintSize="556,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence DisplayName="Catch {ExceptionType}" sap:VirtualizedContainerService.HintSize="484,25" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Error" Message="[&quot;Erreur système : &quot; + exception.Message]" />
-            </Sequence>
-          </ActivityAction>
-        </Catch>
-        <Catch x:TypeArguments="s:ArgumentException" sap2010:WorkflowViewState.IdRef="Catch`1_2">
-          <ActivityAction x:TypeArguments="s:ArgumentException">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="s:ArgumentException" Name="exception" />
-            </ActivityAction.Argument>
-            <Sequence DisplayName="Catch UiPath.Core.BusinessRuleException" sap:VirtualizedContainerService.HintSize="556,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_15">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Error" Message="[&quot;Erreur métier : &quot; + exception.Message]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Erreur système : &quot; + exception.Message]" />
             </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Enfin" sap:VirtualizedContainerService.HintSize="556,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="484,90" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -1,19 +1,17 @@
 {
-  "name": "ProjetFinal",
-  "projectId": "269d5d2f-1cc4-441c-9a3d-2faed963144e",
-  "description": "lecture ecriture des email avec logs et gestion des erreurs",
+  "name": "FinalProject",
+  "projectId": "b38a1117-8c00-4e95-8e49-7270d6e03f72",
+  "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.AmazonWebServices.Activities": "[2.7.3]",
     "UiPath.Excel.Activities": "[3.5.1]",
     "UiPath.Mail.Activities": "[2.9.10]",
-    "UiPath.MicrosoftOffice365.Activities": "[3.9.10]",
     "UiPath.System.Activities": "[26.4.1-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "26.0.193.0",
+  "studioVersion": "26.0.194.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
@@ -49,7 +47,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "ed1733f1-d179-4854-b368-91d976be9543",
+      "uniqueId": "9f51b5d8-245d-4fa0-89c4-38badca2f6fd",
       "input": [],
       "output": []
     }
