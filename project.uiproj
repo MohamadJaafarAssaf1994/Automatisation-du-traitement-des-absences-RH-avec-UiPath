@@ -1,0 +1,6 @@
+{
+  "Name": "ProjetFinal",
+  "ProjectType": "Process",
+  "Description": "lecture ecriture des email avec logs et gestion des erreurs",
+  "MainFile": "Main.xaml"
+}
